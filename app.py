@@ -2,6 +2,7 @@
 # Imports
 #----------------------------------------------------------------------------#
 import json
+import sys
 import dateutil.parser
 import babel
 from flask import (
@@ -16,9 +17,12 @@ from flask_sqlalchemy import SQLAlchemy
 import logging
 from logging import Formatter, FileHandler
 from flask_wtf import Form
-from forms import *
-from flask_migrate import Migrate
 from models import app, db, Venue, Artist, Show
+from flask_migrate import Migrate
+import logging
+from logging import Formatter, FileHandler
+from flask_wtf import Form
+from forms import *
 
 #----------------------------------------------------------------------------#
 # Filters.
